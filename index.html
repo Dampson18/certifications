@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+	body {
+    font-family: 'Georgia', serif; /* Elegant, formal font for an academic look */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background for a clean, subtle look */
+}
+
+header {
+    background-color: #1f2a44; /* Deep blue-gray for a professional, academic feel */
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+#certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.certification-item {
+    background-color: white;
+    padding: 30px;
+    width: 300px; /* Larger boxes for prominent certificates */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for an academic touch */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Georgia', serif;
+}
+
+.certification-item:hover {
+    transform: translateY(-8px); /* Slight "lift" effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.certification-item img {
+    width: 100%;
+    height: auto;
+    max-height: 180px; /* Larger image display */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Spacing between image and text */
+}
+
+.certification-item h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600; /* Bold titles for clarity */
+}
+
+.certification-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 15px 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.5;
+}
+
+.view-button {
+    background-color: #007bff; /* Academic blue for the button */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #0056b3; /* Darker blue on hover for interactivity */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2a44; /* Footer matches header color */
+    color: white;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>My Certifications</h1>
+    </header>
+    
+    <main>
+        <section id="certifications-list">
+            <div class="certification-item">
+                <img src="certification1-thumbnail.jpg" alt="Certification 1 Image">
+                <h3>Higher National Diploma in Computer Science</h3>
+                <p>I earned my Higher National Diploma in Computer Science at Accra Technical University, where I built a strong foundation in programming, software development, and IT.</p>
+                <button class="view-button" onclick="viewFile('HNDcertDampsonKelvin.pdf')">View</button>
+            </div>
+
+            <div class="certification-item">
+                <img src="certification2-thumbnail.jpg" alt="Certification 2 Image">
+                <h3>Data Labeler/Annotator certification</h3>
+                <p>I earned my certification as a Data Labeler/Annotator at Datamaker Ghana, where I honed skills in data categorization and annotation for machine learning and AI applications.</p>
+                <button class="view-button" onclick="viewFile('data_labeller_DampsonKelvin.pdf')">View</button>
+            </div>
+
+            <div class="certification-item">
+                <img src="certification3-thumbnail.jpg" alt="Certification 3 Image">
+                <h3>WASSCE Certification</h3>
+                <p>I completed my WASSCE at West Africa Senior High, focusing on Pure Science, where I gained a strong foundation in subjects like mathematics, physics, and chemistry.</p>
+                <button class="view-button" onclick="viewFile('WASSCEcertDampsonKelvin.pdf')">View</button>
+            </div>
+
+			<div class="certification-item">
+                <img src="certification3-thumbnail.jpg" alt="Certification 3 Image">
+                <h3>Responsive Web Design certification</h3>
+                <p>I earned my Responsive Web Design certification from freeCodeCamp, where I mastered creating responsive, mobile-friendly websites using HTML and CSS.</p>
+                <button class="view-button" onclick="viewFile('Frontend_Certificate.png')">View</button>
+            </div>
+			
+			<div class="certification-item">
+                <img src="certification3-thumbnail.jpg" alt="Certification 3 Image">
+                <h3>National Service Certification</h3>
+                <p>I completed my National Service at Holy Rosary R/C Sch, serving as an Office Assistant and Sub Teacher, where I gained valuable experience in administrative tasks and teaching support.</p>
+                <button class="view-button" onclick="viewFile('NSScertKelvinDampson_unlocked.pdf')">View</button>
+            </div>
+			
+			<div class="certification-item">
+                <img src="certification3-thumbnail.jpg" alt="Certification 3 Image">
+                <h3>Virtual Internship Certification</h3>
+                <p>I completed a Virtual Internship at Accra Technical University, where I gained hands-on experience in databases and connecting frontend applications.</p>
+                <button class="view-button" onclick="viewFile('VirtualInternshipcertDampsonKelvin.pdf')">View</button>
+            </div>
+			
+			<div class="certification-item">
+                <img src="certification3-thumbnail.jpg" alt="Certification 3 Image">
+                <h3>Code Afrique Certification</h3>
+                <p>I received a Certificate of Participation in Code Afrique, where I learned the basics of coding and gained a foundational understanding of programming concepts.</p>
+                <button class="view-button" onclick="viewFile('CodeAfriquecertDampsonKelvin.pdf')">View</button>
+            </div>
+			
+			<div class="certification-item">
+                <img src="certification3-thumbnail.jpg" alt="Certification 3 Image">
+                <h3>Sage Ghana Certification</h3>
+                <p>I received a Sage Ghana Certification after participating in the Students for the Advancement of Global Entrepreneurship (SAGE), where I developed entrepreneurial skills and learned to create impactful business ventures.</p>
+                <button class="view-button" onclick="viewFile('SAGEcertDampsonKelvin.pdf')">View</button>
+            </div>
+            <!-- Add more certifications here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kelvin Dampson</p>
+    </footer>
+
+    <script>
+        // Function to handle file viewing
+        function viewFile(fileName) {
+            const fileExtension = fileName.split('.').pop().toLowerCase();
+            let filePath = `certifications/${fileName}`;
+
+            if (fileExtension === 'pdf') {
+                window.open(filePath, '_blank');
+            } else if (fileExtension === 'jpg' || fileExtension === 'png') {
+                const imageWindow = window.open('', '_blank');
+                imageWindow.document.write(`<img src="${filePath}" alt="Certification Image" style="width: 100%; height: auto;">`);
+            } else if (fileExtension === 'docx') {
+                window.open(filePath, '_blank');
+            } else {
+                alert('Unsupported file format');
+            }
+        }
+    </script>
+</body>
+</html>
